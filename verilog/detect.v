@@ -1,3 +1,6 @@
+module Top0 ();
+endmodule
+
 module Top1 ();
 endmodule
 
