@@ -18,3 +18,5 @@
   * `.sdc`: (*Synopsys Design Constraint*) Is a Tcl-based format used by Synopsys tools to specify the design intent and timing constraints
 * **Vivado:**
   * `.xdc`: (*Xilinx Design Constraints*) Are based on the standard Synopsys Design Constraints (SDC) format
+
+> **NOTE:** for more useful/complete constraint files, you can check the [hdl/constraints](https://github.com/hdl/constraints) project.
