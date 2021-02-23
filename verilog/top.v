@@ -5,7 +5,7 @@ module Top (
 
 localparam FREQ = 50000000;
 
-Blinking #(.FREQ (FREQ), .SECS (1))
+Blink #(.FREQ (FREQ), .SECS (1))
     dut (.clk_i (clk_i), .led_o (led_o));
 
 endmodule

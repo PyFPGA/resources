@@ -14,7 +14,7 @@ architecture Structural of Top is
     constant FREQ : positive := 50e6;
 begin
 
-    dut: Blinking
+    dut: Blink
         generic map (FREQ => FREQ, SECS => 1)
         port map (clk_i => clk_i, led_o => led_o);
 
