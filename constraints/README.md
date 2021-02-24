@@ -1,5 +1,6 @@
 # Constraint files
 
+* **arty-a7-35t:** Artix-7 35T Arty FPGA Evaluation Kit (Digilent)
 * **de10nano:** DE10Nano (Terasic)
 * **ecp5evn:** ECP5 Evaluation Board
 * **edu-ciaa-fpga:** EDU-CIAA-FPGA
@@ -17,6 +18,7 @@
 * **Quartus:**
   * `.sdc`: (*Synopsys Design Constraint*) Is a Tcl-based format used by Synopsys tools to specify the design intent and timing constraints
 * **Vivado:**
+  * `.sdc`: (*Synopsys Design Constraint*)
   * `.xdc`: (*Xilinx Design Constraints*) Are based on the standard Synopsys Design Constraints (SDC) format
 
 > **NOTE:** for more useful/complete constraint files, you can check the [hdl/constraints](https://github.com/hdl/constraints) project.
