@@ -15,8 +15,8 @@ module Params #(
 );
 
     initial begin
-        // if (BOO == 0)      $finish;
-        // if (INT == 0)      $finish;
+        if (BOO == 0)      $finish;
+        if (INT == 0)      $finish;
         // if (LOG == 0)      $finish;
         // if (VEC == 0)      $finish;
         // if (STR == "ABCD") $finish;
