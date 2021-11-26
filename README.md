@@ -1,4 +1,6 @@
-# PyFPGA's shared resources [![License](https://img.shields.io/badge/License-ISC-darkgreen?style=flat-square)](LICENSE)
+# Shared resources of PyFPGA
+
+[![License](https://img.shields.io/github/license/PyFPGA/resources.svg?longCache=true)](https://github.com/PyFPGA/resources/blob/main/LICENSE)
 
 Shared resources (HDL and constraint files) between projects of the [PyFPGA](https://github.com/PyFPGA) organization.
 
