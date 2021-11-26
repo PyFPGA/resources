@@ -1,22 +1,22 @@
 module Blink (
-    input  wire clk_i,
-    output wire led_o
+  input  wire clk_i,
+  output wire led_o
 );
 
-localparam DIV = 50000;
+  localparam DIV = 50000;
 
-reg                   led;
-reg [$clog2(DIV)-1:0] cnt = 0;
+  reg                   led;
+  reg [$clog2(DIV)-1:0] cnt = 0;
 
-always @(posedge clk_i) begin
+  always @(posedge clk_i) begin
     if (cnt == DIV-1) begin
-        cnt = 0;
-        led <= ~led;
+      cnt = 0;
+      led <= ~led;
     end else begin
-        cnt = cnt + 1;
+      cnt = cnt + 1;
     end
-end
+  end
 
-assign led_o = led;
+  assign led_o = led;
 
 endmodule
