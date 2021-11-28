@@ -1,1 +1,1 @@
-`define DEFAULT_FREQ 25000000
+`define FREQ 10000000

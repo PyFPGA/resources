@@ -1,1 +1,1 @@
-`define DEFAULT_SECS 1
+`define SECS 1
