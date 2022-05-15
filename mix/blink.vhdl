@@ -9,22 +9,22 @@ entity Blink is
 end entity Blink;
 
 architecture RTL of Blink is
-  constant DIV : positive:=50000-1;
+  constant DIV : positive:=50000;
   signal   led : std_logic;
+  signal   cnt : natural range 0 to DIV-1:=0;
 begin
 
   blink_p: process (clk_i)
-    variable cnt: natural range 0 to DIV:=0;
   begin
     if rising_edge(clk_i) then
-      if cnt=DIV then
-        cnt:=0;
+      if cnt=DIV-1 then
+        cnt <= 0;
         led <= not(led);
       else
-        cnt:=cnt+1;
+        cnt <= cnt+1;
       end if;
     end if;
-  end process do_blink;
+  end process blink_p;
 
   led_o <= led;
 
