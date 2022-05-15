@@ -3,7 +3,7 @@ module Blink (
   output wire led_o
 );
 
-  localparam DIV = 50000;
+  localparam            DIV = 50000;
 
   reg                   led;
   reg [$clog2(DIV)-1:0] cnt = 0;
