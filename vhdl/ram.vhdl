@@ -43,6 +43,6 @@ begin
       end if;
       data_o <= to_stdlogicvector(ram(to_integer(unsigned(addr_i))));
     end if;
-end process;
+  end process;
 
 end architecture RTL;
